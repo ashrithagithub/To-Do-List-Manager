@@ -6,6 +6,7 @@ Create a simple console application to manage a list of tasks. Users can add, re
 
 #Project Breakdown:
 
+
 • Task Input (Reference 2): Use console input to let users add and remove
 tasks.
 
@@ -132,6 +133,3 @@ Summary of Key Concepts Used
 
 ________________________________________
 This simple yet powerful program demonstrates the fundamentals of Java programming while providing a practical tool that can be extended in the future with features like saving tasks to a file, editing tasks, setting deadlines, or even adding a graphical user interface (GUI).
-
-
-
