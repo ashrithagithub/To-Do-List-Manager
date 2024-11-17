@@ -63,19 +63,23 @@ ________________________________________
 2.	View all tasks
 3.	Remove a task
 4.	Exit the application
+   
 •	The user is prompted to enter their choice, which is stored in the choice variable.
 ________________________________________
 3. Adding a Task
+   
 •	When the user selects option 1:
 •	The program prompts the user to enter a task description.
 •	The entered task is added to the tasks list using the add() method.
 •	A confirmation message, "Task added!", is displayed.
 
 Example:
+
 Enter task: Complete Java assignment
 Task added!
 ________________________________________
 4. Viewing All Tasks
+   
 •	When the user selects option 2:
 •	If the tasks list is empty, the program displays "No tasks to display!".
 •	If there are tasks present, the program iterates through the list and displays each task with a corresponding number.
@@ -120,6 +124,7 @@ ________________________________________
 •	If the user enters an invalid option (i.e., anything other than 1, 2, 3, or 4), the program displays an error message:
 
 Invalid choice! Please try again.
+
 •	The program then returns to the main menu, allowing the user to try again.
 ________________________________________
 Summary of Key Concepts Used
