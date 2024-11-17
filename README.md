@@ -1,131 +1,154 @@
-# To-Do-List-Manager
+### **Detailed Description and Working Procedure**
 
-Create a simple console application to manage a list of tasks. Users can add, remove, and view their tasks.
+The **To-Do List Manager** is a console-based Java application designed to help users manage their tasks. The application allows users to add tasks, view the list of tasks, remove specific tasks, and exit the program when done. Below is a detailed breakdown of its functionality and working.
 
+---
 
+### **1. Purpose of the Program**
+The program serves as a simple task manager that helps users keep track of their daily tasks. It enables users to:
+- Add tasks to a list.
+- View the tasks in an organized manner.
+- Remove tasks based on their position in the list.
+- Exit the program when all tasks are managed.
 
-#Project Breakdown:
+This application demonstrates basic programming concepts such as user input, list manipulation, and control structures in Java.
 
-• Task Input (Reference 2): Use console input to let users add and remove tasks.
+---
 
-• Display Task List: Show all tasks in a clear and organized format.
+### **2. Key Components of the Code**
+1. **Task Storage**:
+   - The program uses an `ArrayList<String>` to store the tasks.  
+   - An `ArrayList` is dynamic, meaning tasks can be added or removed without the need to predefine the size.
 
-• Data Storage: Store tasks in an array or list and provide options for adding and removing tasks.
+2. **User Input**:
+   - The `Scanner` class is used to take input from the user, ensuring an interactive experience.
 
-• Outcome: A functional to-do list application that manages tasks using basic user input and array operations.
+3. **Menu System**:
+   - A `do-while` loop ensures that the menu is repeatedly displayed until the user chooses to exit.
 
+4. **Switch-Case Logic**:
+   - The menu options are handled using a `switch` statement.  
+   - Each case corresponds to a specific functionality:
+     - **Case 1**: Add a task.
+     - **Case 2**: View tasks.
+     - **Case 3**: Remove a task.
+     - **Case 4**: Exit the program.
 
+5. **Validation**:
+   - The program checks for edge cases, such as:
+     - Empty task lists when viewing or removing tasks.
+     - Invalid task numbers for removal.
 
+---
 
+### **3. Working Procedure**
+1. **Program Initialization**:
+   - The program begins by initializing an empty `ArrayList` to store tasks.
+   - A `Scanner` is also initialized for user input.
 
+2. **Displaying the Menu**:
+   - A menu with options (Add Task, View Tasks, Remove Task, Exit) is displayed to the user.
+   - The user is prompted to choose an option by entering a number.
 
-#Description of To-Do List Manager Program:
+3. **Processing User Choice**:
+   - Based on the user’s choice, the corresponding action is executed:
+     - **Option 1 (Add Task)**:
+       - Prompts the user to enter a task.
+       - The entered task is added to the `ArrayList`.
+       - A confirmation message is displayed.
+     - **Option 2 (View Tasks)**:
+       - Checks if the task list is empty.
+       - If tasks exist, they are displayed in a numbered list format.
+       - If no tasks exist, a message is shown indicating that the list is empty.
+     - **Option 3 (Remove Task)**:
+       - Checks if the task list is empty.
+       - If tasks exist, displays the list and prompts the user to enter the number of the task to be removed.
+       - Validates the entered number to ensure it corresponds to an existing task.
+       - Removes the task and displays a confirmation message.
+       - If the number is invalid, an error message is shown.
+     - **Option 4 (Exit)**:
+       - Displays a goodbye message and exits the program.
 
+4. **Repeating the Process**:
+   - The menu is displayed again after every operation until the user chooses to exit.
 
-This Java program, named ToDoListManager, is a console-based application designed to help users efficiently manage a to-do list. It enables users to add tasks, view all tasks, and remove tasks from their list. The program uses a simple text-based menu system and makes use of Java's ArrayList and Scanner classes for dynamic task management and user input handling, respectively. This project is perfect for beginners who want to learn about Java collections, loops, and switch-case constructs.
+5. **Closing the Scanner**:
+   - Before exiting, the `Scanner` is closed to free up resources.
 
+---
 
+### **4. Example Workflow**
 
-
-#Working Procedure (Detailed Explanation):
-
-The ToDoListManager program is broken down into several functionalities, each corresponding to a menu option presented to the user. Here’s a step-by-step explanation of how the program works
-
-________________________________________
-1. Initial Setup and Variables
-   
-•	The program begins by importing essential Java utilities:
-
-• ArrayList is used to store the tasks dynamically.
-
-•	Scanner is used to accept user input.
-
-•	An ArrayList named tasks is initialized to hold the list of tasks.
-
-•	The variable choice is used to store the user's menu selection.
-
-________________________________________
-2. Main Menu and User Input Loop
-   
-•	The program uses a do-while loop to continuously prompt the user for actions until they choose to exit.
-
-•	The menu options displayed are:
-
-1.	Add a task
-2.	View all tasks
-3.	Remove a task
-4.	Exit the application
-   
-•	The user is prompted to enter their choice, which is stored in the choice variable.
-________________________________________
-3. Adding a Task
-   
-•	When the user selects option 1:
-•	The program prompts the user to enter a task description.
-•	The entered task is added to the tasks list using the add() method.
-•	A confirmation message, "Task added!", is displayed.
-
-Example:
-
-Enter task: Complete Java assignment
+#### Adding a Task:
+```
+--- To-Do List Manager ---
+1. Add Task
+2. View Tasks
+3. Remove Task
+4. Exit
+Enter your choice: 1
+Enter task: Complete homework
 Task added!
-________________________________________
-4. Viewing All Tasks
-   
-•	When the user selects option 2:
-•	If the tasks list is empty, the program displays "No tasks to display!".
-•	If there are tasks present, the program iterates through the list and displays each task with a corresponding number.
+```
 
-
-Example Output:
-
-Your Tasks:
-1. Complete Java assignment
-2. Review notes for the exam
-________________________________________
-5. Removing a Task
-•	When the user selects option 3:
-o	If the tasks list is empty, the program displays "No tasks to remove!".
-o	If tasks exist, the program displays all tasks with their corresponding numbers.
-o	The user is prompted to enter the task number they wish to remove.
-o	The program checks if the entered number is valid:
-	If valid, it removes the selected task using the remove() method.
-	If invalid, it displays "Invalid task number!".
-
-
-Example:
+#### Viewing Tasks:
+```
+--- To-Do List Manager ---
+1. Add Task
+2. View Tasks
+3. Remove Task
+4. Exit
+Enter your choice: 2
 
 Your Tasks:
-1. Complete Java assignment
-2. Review notes for the exam
+1. Complete homework
+```
+
+#### Removing a Task:
+```
+--- To-Do List Manager ---
+1. Add Task
+2. View Tasks
+3. Remove Task
+4. Exit
+Enter your choice: 3
+
+Your Tasks:
+1. Complete homework
 Enter task number to remove: 1
 Task removed!
-________________________________________
-6. Exiting the Application
-•	When the user selects option 4:
-o	The program exits the loop and displays "Exiting... Goodbye!".
-•	The scanner.close() method is called to release system resources.
+```
 
-
-Example:
-
+#### Exiting the Program:
+```
+--- To-Do List Manager ---
+1. Add Task
+2. View Tasks
+3. Remove Task
+4. Exit
+Enter your choice: 4
 Exiting... Goodbye!
+```
 
-________________________________________
-7. Handling Invalid Inputs
-•	If the user enters an invalid option (i.e., anything other than 1, 2, 3, or 4), the program displays an error message:
+---
 
-Invalid choice! Please try again.
+### **5. Key Features**
+- **Dynamic Task Management**:
+  - Tasks can be added or removed easily due to the flexibility of `ArrayList`.
+- **Interactive Menu**:
+  - The program provides a user-friendly menu for easy navigation.
+- **Error Handling**:
+  - Checks for empty lists and invalid inputs, ensuring robustness.
 
-•	The program then returns to the main menu, allowing the user to try again.
-________________________________________
-Summary of Key Concepts Used
+---
 
-•	ArrayList: This data structure is used because of its dynamic size, allowing tasks to be added and removed easily.
-•	Scanner: The program uses Scanner for reading user inputs from the console.
-•	Loops (do-while): Ensures the menu is displayed repeatedly until the user chooses to exit.
-•	Conditional Statements (switch-case): Efficiently handles different user choices.
-•	Exception Handling: Although not explicitly used in this code, user input validation prevents some common errors.
+### **6. Practical Applications**
+This program can be used as a basic task manager. It also serves as an excellent exercise for learning:
+- ArrayList manipulation.
+- Control flow with loops and conditionals.
+- User input validation.
 
-________________________________________
-This simple yet powerful program demonstrates the fundamentals of Java programming while providing a practical tool that can be extended in the future with features like saving tasks to a file, editing tasks, setting deadlines, or even adding a graphical user interface (GUI).
+---
+
+### **Conclusion**
+The **To-Do List Manager** is a simple yet powerful tool for managing tasks in a console-based environment. It introduces core programming concepts and demonstrates how user input and dynamic data structures can work together to create functional applications.
