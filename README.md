@@ -1,16 +1,10 @@
 # To-Do-List-Manager
 
-
-
-
 Create a simple console application to manage a list of tasks. Users can add, remove, and view their tasks.
 
 
 
-
-
 #Project Breakdown:
-
 
 • Task Input (Reference 2): Use console input to let users add and remove tasks.
 • Display Task List: Show all tasks in a clear and organized format.
@@ -20,13 +14,12 @@ Create a simple console application to manage a list of tasks. Users can add, re
 
 
 
-
-
-
-#Description of To-Do List Manager Program
+#Description of To-Do List Manager Program:
 
 
 This Java program, named ToDoListManager, is a console-based application designed to help users efficiently manage a to-do list. It enables users to add tasks, view all tasks, and remove tasks from their list. The program uses a simple text-based menu system and makes use of Java's ArrayList and Scanner classes for dynamic task management and user input handling, respectively. This project is perfect for beginners who want to learn about Java collections, loops, and switch-case constructs.
+
+
 
 
 #Working Procedure (Detailed Explanation):
