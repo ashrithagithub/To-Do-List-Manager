@@ -27,6 +27,7 @@ This project is perfect for beginners who want to learn about Java collections, 
 The ToDoListManager program is broken down into several functionalities, each corresponding to a menu option presented to the user. Here’s a step-by-step explanation of how the program works:
 ________________________________________
 1. Initial Setup and Variables
+   
 •	The program begins by importing essential Java utilities:
 •	ArrayList is used to store the tasks dynamically.
 •	Scanner is used to accept user input.
