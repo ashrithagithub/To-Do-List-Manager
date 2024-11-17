@@ -1,4 +1,8 @@
-### **Detailed Description and Working Procedure**
+# To-Do List Manager
+
+Create a simple console application to manage a list of tasks. Uses can add, remove, and view their tasks.
+
+### **Description and Working Procedure**
 
 The **To-Do List Manager** is a console-based Java application designed to help users manage their tasks. The application allows users to add tasks, view the list of tasks, remove specific tasks, and exit the program when done. Below is a detailed breakdown of its functionality and working.
 
