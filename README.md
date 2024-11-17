@@ -1,6 +1,10 @@
 # To-Do-List-Manager
+
 Create a simple console application to manage a list of tasks. Users can add, remove, and view their tasks.
-Project Breakdown:
+
+
+#Project Breakdown:
+
 • Task Input (Reference 2): Use console input to let users add and remove
 tasks.
 • Display Task List: Show all tasks in a clear and organized format.
